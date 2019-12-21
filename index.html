@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo List</title>
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- Main Style File-->
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+    <section id="Project">
+        <div class="container">
+            <h1>Todo List</h1>
+            <div class="inp">
+                <input type="text" name="addTask" placeholder="new task..." id="taskContents">
+                <button id="addTask">add Task</button>
+            </div>
+            <div class="todo-container">
+                <div class="todo-child">
+                    <h5 class="main">tasks</h5>
+                    <ul id="tasks">
+                        <button id="cleartask">clear ALL tasks <i class="far fa-times-circle"></i></button>
+                    </ul>
+                </div>
+                <div class="todo-child">
+                    <h5>completed tasks <i class="fas fa-check-circle"></i></h5>
+                    <ul id="compeletedtasks">
+                            <button id="clearcompletetask">clear tasks</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+    <!--*****Script*****-->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

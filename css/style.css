@@ -1,0 +1,126 @@
+/* ************* Global Style************* */
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 70%;
+    margin: 40px auto 100px;
+    background-color: rgb(221, 221, 221);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px #7b7a7a;
+}
+/* ************* Main Style************* */
+#Project{
+    background-image: url("../imgs/background.jpg");
+    padding: 1px;
+    height: 100vh;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ************* Ul Style************* */
+#Project ul{
+    list-style: none;
+}
+#Project li {
+    background-color:#730caa ;
+    color: #fff;
+    padding: 10px;
+    border-left: 5px solid #16051f;
+    margin-bottom: 5px;
+    width: 90%;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+#Project li:hover{
+    background-color:#fff ;
+    color: #730caa;
+}
+#Project .container h1{
+    text-align: center;
+    color: #730caa;
+    font-size: 40px;
+    margin: 20px;
+}
+/* ************* Input System Style************* */
+#Project .container .inp #addTask {
+    color: #fff;
+    background-color: #0505fd;
+    text-transform: capitalize;
+    padding: 8px 40px;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #0e0e0e;
+    transition: background-color .3s ease;
+}
+#Project .container .inp #addTask:hover{
+    background-color: rgb(241, 0, 121);
+}
+#Project .container .inp #taskContents{
+    width: 97%;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #730caa;
+    background-color: transparent;
+    padding: 5px 20px;
+    outline: none;
+    font-size: 16px;
+}
+/* ************* Tasks Container Style************* */
+#Project .container .todo-container{
+    display: flex;
+    justify-content: space-between;
+}
+#Project .container .todo-container .todo-child{
+    flex: 0 0 50%;
+}
+#Project .container .todo-container .todo-child h5 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+#Project .container .todo-container .todo-child #compeletedtasks {
+    text-align: start;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+#Project .container .todo-container .todo-child  #cleartask , 
+#Project .container .todo-container .todo-child  #clearcompletetask {
+    color: #fff;
+    display: flex;
+    background-color: #411010;
+    margin: 20px auto;
+    text-transform: capitalize;
+    padding: 8px 40px;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #0e0e0e;
+    transition: background-color .3s ease;
+}
+#Project .container .todo-container .todo-child  #cleartask:hover{
+    background-color: #fc0000;
+}
+#Project .container .todo-container .todo-child  #cleartask .far {
+    font-weight: 900;
+    padding-left: 5px;
+    margin-top: 2px;
+}
+#Project .container .todo-container .todo-child  #clearcompletetask {
+    background-color:rgb(241, 0, 121) ;
+}
